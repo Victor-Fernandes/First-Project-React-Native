@@ -1,10 +1,23 @@
 import React from 'react';
 import {View} from 'react-native';
 
-// import { Container } from './styles';
+import {Container} from './styles';
 
 export default function Main() {
-  return <View />;
+  return (
+    <Container>
+      <Form>
+        <Input
+          autoCorrect={false}
+          autoCapitalize="none"
+          placeholder="Adicionar usuário"
+        />
+        <SubmitButton>
+
+        </SubmitButton>
+      </Form>
+    </Container>
+  );
 }
 
 Main.navigationsOptions = {
